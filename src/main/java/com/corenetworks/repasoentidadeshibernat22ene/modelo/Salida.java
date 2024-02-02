@@ -28,7 +28,6 @@ public class Salida {
     @ManyToOne
     @JoinColumn(name = "dni",nullable = false,foreignKey = @ForeignKey(name = "FK_salidas_patrones"))
     private Patron patron;
-    
 
     public Salida(int idSalida, LocalDate fSalida, LocalTime hSalida, String destino, Barco barco) {
         this.idSalida = idSalida;
